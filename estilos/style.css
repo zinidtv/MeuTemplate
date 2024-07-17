@@ -331,3 +331,19 @@ header {
 /* CONTATO */
 
 /* CONTATO */
+
+/* RODAPÉ */
+.rodape {
+    background-color: var(--cor01);
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rodape-conteudo {
+    text-align: center;
+    color: var(--cor04);
+}
+/* RODAPÉ */
