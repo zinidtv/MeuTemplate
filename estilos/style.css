@@ -335,6 +335,7 @@ header {
     align-items: center;
     padding: 20px;
 }
+/* FORM CONTATO */
 .form-container {
     width: 65vw;
     background: linear-gradient(#212121, #212121) padding-box,
@@ -349,33 +350,33 @@ header {
     gap: 20px;
     box-sizing: border-box;
     border-radius: 16px;
-  }
+}
   
-  .form-container button:active {
+.form-container button:active {
     scale: 0.95;
-  }
+}
   
-  .form-container .form {
+.form-container .form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+}
   
-  .form-container .form-group {
+.form-container .form-group {
     display: flex;
     flex-direction: column;
     gap: 2px;
-  }
+}
   
-  .form-container .form-group label {
+.form-container .form-group label {
     display: block;
     margin-bottom: 5px;
     color: #717171;
     font-weight: 600;
     font-size: 12px;
-  }
+}
   
-  .form-container .form-group input {
+.form-container .form-group input {
     width: 100%;
     padding: 12px 16px;
     border-radius: 8px;
@@ -383,9 +384,9 @@ header {
     font-family: inherit;
     background-color: transparent;
     border: 1px solid #414141;
-  }
+}
   
-  .form-container .form-group textarea {
+.form-container .form-group textarea {
     width: 100%;
     padding: 12px 16px;
     border-radius: 8px;
@@ -395,23 +396,23 @@ header {
     border: 1px solid #414141;
     background-color: transparent;
     font-family: inherit;
-  }
+}
   
-  .form-container .form-group input::placeholder {
+.form-container .form-group input::placeholder {
     opacity: 0.5;
-  }
+}
   
-  .form-container .form-group input:focus {
+.form-container .form-group input:focus {
     outline: none;
     border-color: var(--cor03);
-  }
+}
   
-  .form-container .form-group textarea:focus {
+.form-container .form-group textarea:focus {
     outline: none;
     border-color: var(--cor03);
-  }
+}
   
-  .form-container .form-submit-btn {
+.form-container .form-submit-btn {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -428,12 +429,245 @@ header {
     margin-top: 8px;
     cursor: pointer;
     border-radius: 6px;
-  }
+}
   
-  .form-container .form-submit-btn:hover {
+.form-container .form-submit-btn:hover {
     background-color: var(--cor04);
     border-color: var(--cor04);
-  }
+}
+/* FORM CONTATO */
+.email-contato {
+    padding: 10px;
+    color: var(--cor04);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoes {
+    display: flex;
+    padding: 10px;
+}
+.BtnFB, .BtnIG, .BtnSF, .Btn {
+    margin: 13px;
+}
+/* BT FACEBOOK */
+.BtnFB {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+  
+.svgContainerFB {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+  
+.BGFB {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1877f2;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+  
+.BtnFB:hover .BGFB {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+  
+.BtnFB:hover .svgContainerFB {
+    border: 1px solid rgba(230, 230, 230, 0.466);
+    background-color: rgba(204, 204, 204, 0.466);
+    backdrop-filter: blur(4px);
+}
+/* BT FACEBOOK */
+
+/* BT INSTAGRAM */
+.BtnIG {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+  
+.svgContainerIG {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+  
+.BGIG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+}
+  
+.BtnIG:hover .BGIG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+  
+.BtnIG:hover .svgContainerIG {
+    background-color: rgba(156, 156, 156, 0.466);
+}
+/* BT INSTAGRAM */
+
+/* BT SPOTIFY */
+.BtnSF {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+  
+.svgContainerSF {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+  
+.BGSF {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1db954;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+  
+.BtnSF:hover .BGSF {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+  
+.BtnSF:hover .svgContainerSF {
+    background-color: rgba(207, 207, 207, 0.466);
+    backdrop-filter: blur(4px);
+}
+/* BT SPOTIFY */
+
+/* BT YOUTUBE */
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+  
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+  
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+  
+.Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+  
+.Btn:hover .svgContainer {
+    border: 1px solid rgba(255, 110, 110, 0.466);
+    background-color: rgba(219, 219, 219, 0.466);
+    backdrop-filter: blur(4px);
+}
+/* BT YOUTUBE */
 /* CONTATO */
 
 /* RODAPÉ */
