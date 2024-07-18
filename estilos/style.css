@@ -48,7 +48,9 @@ header {
 .nav-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 2rem;
+    height: 65px;
 }
 
 .logo {
@@ -169,69 +171,99 @@ header {
     background-color: #e9f2f775;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.548);
     border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 50vw;
+    background: rgb(255, 255, 255);
+    border-radius: 0.7em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: rgb(250, 250, 250) 0.3em solid;
+}
+.card:hover {
+    border: var(--cor02) 0.3em solid;
+}
+.livro-capa {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.livro-capa img {
+    width: 100%;
+    border-radius: 2%;
 }
 
+.livro-resumo {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .livro-resumo p {
     text-align: justify;
     padding: 10px;
     color: var(--cor07);
 }
-.livro-capa img {
-    width: 100%;
-    padding: 10px;
-}
-.livro-leia {
+
+.readmore-btn {
+    width: fit-contentd;
+    height: 55px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-}
-.livro-leia p {
-    text-align: justify;
-    padding: 10px;
-    color: var(--cor07);
-}
-.livro-leia a {
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--cor03);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 15px;
     margin: 10px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: var(--cor10);
-    color: black;
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
-    transition-duration: 0.5s;
-}
-.livro-leia a:hover {
-    background-color: var(--cor09);
-    color: var(--cor08);
-    text-decoration: underline;
-}
-
-@media screen and (min-width: 768px) {
-    .livro-conteudo {
-        width: 75vw;
-
-        display: flex;
-        /* justify-content: space-between; */
+    gap: 0px;
+    transition: all 0.4s;
+  }
+  .book-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 45px;
+    height: 100%;
+  }
+  .book-wrapper .book-page {
+    width: 50%;
+    height: auto;
+    position: absolute;
+  }
+  .readmore-btn:hover .book-page {
+    animation: paging 0.7s linear infinite;
+    transform-origin: left;
+  }
+  .readmore-btn:hover {
+    background-color: var(--cor01);
+  }
+  @keyframes paging {
+    0% {
+      transform: rotateY(0deg) skewY(0deg);
     }
-    .livro-resumo {
-        width: 30vw;
+    50% {
+      transform: rotateY(90deg) skewY(-20deg);
     }
-    .livro-resumo p {
-        font-size: 1.5rem;
+    100% {
+      transform: rotateY(180deg) skewY(0deg);
     }
-
-    
-    .livro-capa img {
-        width: 15vw;
-    }
-
-    .livro-leia {
-        width: 50%;
-        font-size: 1.3rem;
-
-        align-self: self-end;
-    }
+  }
+  .text {
+    width: 105px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
 }
 /* LIVRO */
 
@@ -242,12 +274,6 @@ header {
     padding: 15px;
     color: var(--cor04);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.582);
-}
-
-@media screen and (min-width: 768px) {
-    .title-agenda-conteudo {
-        font-size: 1.7em;
-    }
 }
 /* TITULO AGENDA */
 
@@ -310,21 +336,6 @@ header {
     background-color: var(--cor09);
     color: var(--cor08);
     text-decoration: underline;
-}
-
-@media screen and (min-width: 768px) {
-    .agenda-conteudo-item {
-        width: 75vw;
-    }
-    .shows {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .shows-conteudo-item {
-        width: 300px;
-    }
 }
 /* AGENDA */
 
