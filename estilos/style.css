@@ -437,7 +437,7 @@ header {
 }
 /* FORM CONTATO */
 .email-contato {
-    padding: 10px;
+    padding: 13px;
     color: var(--cor04);
 
     display: flex;
@@ -449,7 +449,7 @@ header {
     display: flex;
 }
 .BtnFB, .BtnIG, .BtnSF, .Btn {
-    margin: 13px;
+    margin: 10px;
 }
 
 /* BT FACEBOOK */
