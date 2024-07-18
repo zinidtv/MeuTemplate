@@ -447,11 +447,11 @@ header {
 
 .botoes {
     display: flex;
-    padding: 10px;
 }
 .BtnFB, .BtnIG, .BtnSF, .Btn {
     margin: 13px;
 }
+
 /* BT FACEBOOK */
 .BtnFB {
     width: 45px;
