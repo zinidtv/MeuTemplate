@@ -176,7 +176,7 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.card {
+.cardLivro {
     width: 50vw;
     background: rgb(255, 255, 255);
     border-radius: 0.7em;
@@ -184,7 +184,7 @@ header {
     transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: rgb(250, 250, 250) 0.3em solid;
 }
-.card:hover {
+.cardLivro:hover {
     border: var(--cor02) 0.3em solid;
 }
 .livro-capa {
@@ -255,7 +255,7 @@ header {
       transform: rotateY(180deg) skewY(0deg);
     }
   }
-  .text {
+  .text-livro {
     width: 105px;
     height: 100%;
     display: flex;
@@ -304,6 +304,120 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+/* **** */
+.container {
+    padding: 10px;
+    margin: 0 auto;
+}
+  
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    background: var(--cor01);
+    border-radius: 19px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+  
+.face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.face.back {
+    box-sizing: border-box;
+    padding: 20px;
+}
+  
+.face.back b {
+    margin: 0;
+    padding: 0;
+}
+
+.desc {
+    font-size: 1.2em;
+}
+.face.back .desc {
+    background-color: #eee;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.face.front {
+    transition: 0.5s;
+}
+  
+.face.front b {
+    margin: 0;
+    padding: 0;
+    font-size: 5.1em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+  
+.card:hover .face.front {
+    height: 60px;
+}
+  
+.card:hover .face.front b {
+    font-size: 2em;
+}
+  
+.face.front {
+    background-color: var(--cor03);
+    border-radius: 15px;
+}
+/* **** */
+
+/* ***** */
+.button {
+    margin: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
+#buy {
+    padding: 0.6rem 1.3rem;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.111rem;
+    transition: all 0.15s ease-in-out;
+    background-color: var(--cor03);
+}
+  
+#buy:hover {
+    cursor: pointer;
+    background-color: var(--cor02);
+    color: #fff;
+    scale: 0.9;
+}
+  
+#btn_back {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+    z-index: -1;
+}
+/* ***** */
 .shows-conteudo {
     text-align: center;
     padding: 10px;
