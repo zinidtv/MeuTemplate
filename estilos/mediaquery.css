@@ -56,7 +56,7 @@
 
 /* LIVRO */
 @media screen and (min-width: 768px) {
-    .card {
+    .cardLivro {
         width: 20.5vw;
     }
     .livro-conteudo {
@@ -106,5 +106,15 @@
     }
     .shows-conteudo-item {
         width: 300px;
+    }
+}
+
+/* CONTATO */
+@media screen and (min-width: 768px) {
+    .form-container {
+        width: 45vw;
+    }
+    .form-container .form-submit-btn {
+        width: 160px;
     }
 }
