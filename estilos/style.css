@@ -31,6 +31,10 @@
     font-family: var(--font01);
 }
 
+html body {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--cor05);
     height: 100vh;
@@ -40,9 +44,12 @@ body {
 /* MENU */
 header {
     background-color: var(--cor01);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.582);
+}
+.menu {
+    overflow: hidden;
     position: sticky;
     top: 0px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.582);
 }
 
 .nav-bar {
@@ -95,8 +102,6 @@ header {
 .mobile-menu {
     display: none;
 }
-
-
 /* MENU */
 
 /* HOME */
@@ -125,7 +130,6 @@ header {
 .conteudo-img > a > img {
     width: 80%;
 }
-
 /* HOME */
 
 /* SIRACUSA */
@@ -135,33 +139,11 @@ header {
     background-size: cover;
     height: 140px;
 }
-.siracusa-conteudo {
-    width: 65vw;
-}
-
-@media screen and (min-width: 768px) {
-    .siracusa {
-        height: 240px;
-    }
-    .siracusa-conteudo {
-        width: 75vw;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .siracusa {
-        height: 420px;
-    }
-    .siracusa-conteudo {
-        width: 75vw;
-    }
-}
 /* SIRACUSA */
 
 /* LIVRO */
 .livro {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }

@@ -54,6 +54,19 @@
     }
 }
 
+/* SIRACUSA */
+@media screen and (min-width: 768px) {
+    .siracusa {
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .siracusa {
+        height: 420px;
+    }
+}
+
 /* LIVRO */
 @media screen and (min-width: 768px) {
     .cardLivro {
@@ -75,14 +88,8 @@
 
     
     .livro-capa img {
-        width: 20vw;
-    }
-
-    .livro-leia {
-        width: 50%;
-        font-size: 1.3rem;
-
-        align-self: self-end;
+        width: 20.1vw;
+        border-radius: 1%;
     }
 }
 
